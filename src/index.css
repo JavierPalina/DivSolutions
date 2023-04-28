@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #C1C5F7 0.89%,
+    #BEC2F4 17.23%,
+    rgb(140, 145, 237) 42.04%,
+    #6068E7 55.12%,
+    #4142D8 71.54%,
+    rgb(54, 52, 206) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #C1C5F7 -43.27%,
+    #BEC2F4 -21.24%,
+    #8B90ED 12.19%,
+    #6068E7 29.82%,
+    #4142D8 51.94%,
+    #3634CE 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+.mySwiper {
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: 0;
+  z-index: 997;
+  border-radius: 40px;
+  margin: 4px;
+}
+
+.macbook {
+  width: 79%;
+  border-radius: 0px !important;
+  left: 50px;
+}
+
+.macbookSlider {
+  border-radius: 0px !important;
+  margin-right: 30px;
+  height: max-content;
+  top: 25px;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+    display: none;
+}
+
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-button-prev {
+    display: none;
+}
+
+.swiperContenido {
+  background-color: #3634CE;
+}
+
+.swiper-slide {
+  background-color: red;
+}
+
+.iphone {
+  z-index: 999;
+}
+
+.imageMacbook {
+  width: 100%;
+  height: 80%;
+}
+
+.iphoneContainer {
+  width: 35%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.sectionInfoCard {
+  justify-content: left;
+}
+
+.select {
+  border-radius: 5px;
+  padding: 2px;
+  background: radial-gradient( 64.18% 64.18% at 71.16% 35.69%, #C1C5F7 0.89%, #BEC2F4 17.23%, rgb(140, 145, 237) 42.04%, #6068E7 55.12%, #4142D8 71.54%, rgb(54, 52, 206) 100% );
+}
+
+option {
+  background-color: #3634CE;
+  color: #11101d;
+  border-radius: 5px;
+  padding: 2px;
+  background: radial-gradient( 64.18% 64.18% at 71.16% 35.69%, #C1C5F7 0.89%, #BEC2F4 17.23%, rgb(140, 145, 237) 42.04%, #6068E7 55.12%, #4142D8 71.54%, rgb(54, 52, 206) 100% );
+}
+
+@media (min-width: 1000px) {
+  .contactForm {
+    padding: 40px 220px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .macbook {
+    left: 40px;
+  }
+
+  form {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .macbook {
+    left: 35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .macbook {
+    left: 30px;
+    top: -3px;
+  }
+}
+
+@media (max-width: 300px) {
+  .macbook {
+    left: 20px;
+    top: -3px;
+  }
+}
